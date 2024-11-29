@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Containers Demo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+      background-image: url(geometry_dash_background.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    input[type="text"],{
+      padding: 5px;
+      width: 50%;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .container{
+      background-color: #3d4f80;
+      opacity: 0.8;
+      color: black;
+      padding: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="text-center mb-4">Engineering Club Registration Form</h1>
+    </div>
+    <div class="main-area">
+      <form>
+      <div class="row mb-3">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Type your Name here">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <label for="age">Age</label>
+          <input type="text" class="form-control" id="age" placeholder="Type your Age here">
+        </div>
+      </div>
+      <div class="row mb-3">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Type your Email here">
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <label for="phone-number">Phone Number</label>
+            <input type="text" class="form-control" id="phone-number" placeholder="Type your Phone Number here">
+          </div>
+        </div>
+            <h3 class="mb-4">Preferred topics</h3>
+          <div class="form-check mb-3">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <input type="checkbox" class="form-check-input" id="checkbox1">
+              <label class="form-check-label" for="checkbox1">Robotics</label>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <input type="checkbox" class="form-check-input" id="checkbox2">
+             <label class="form-check-label" for="checkbox2">Automotive</label>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <input type="checkbox" class="form-check-input" id="checkbox3">
+             <label class="form-check-label" for="checkbox3">Structural</label>
+            </div>
+          </div>
+            <h3 class="mb-4">Experience/Knowledge of Engineering</h3>
+          <div class="form-check mb-3">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <input type="radio" class="form-check-input" id="radio1">
+              <label class="form-check-label" for="radio1">Beginner</label>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <input type="radio" class="form-check-input" id="radio2">
+              <label class="form-check-label" for="radio2">Intermediate</label> 
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+             <input type="radio" class="form-check-input" id="radio3">
+             <label class="form-check-label" for="radio3">Advanced</label>
+            </div>
+          </div>
+            <div class="form-group">
+              <label for="project">Which Project will you like most</label>
+              <select class="form-control" id="project">
+                <option>Construction of popsicle tower</option>
+                <option>Making code for Robotics</option>
+                <option>Designing a automotive vehicle</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="textarea">Please put your reason and passion for Engineering</label>
+              <textarea class="form-control" id="textarea" placeholder="Input reasons for this registry"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
